@@ -3,6 +3,19 @@ import java.util.*;
 
 public class First_project {
 	public static void main(String args[]) {
-		System.out.print("hello java");
+		Scanner sc= new Scanner(System.in);
+		System.out.print("enter the string");
+		String s1=sc.nextLine();
+		String s2="";
+		for(int i=s1.length()-1;i>=0;i--) {
+			s2=s2+s1.charAt(i);
+		}
+		if(s1.equals(s2)) {
+			System.out.print("it is palindrom");
+		}
+		else {
+			System.out.print("not a palindrom");
+		}
 	}
+
 }
